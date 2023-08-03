@@ -1,154 +1,112 @@
+## Nome do Projeto
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
+O projeto é um boilerplate (modelo inicial) que combina diversas tecnologias modernas para desenvolvimento web,
+proporcionando uma base sólida e pronta para começar a criar aplicações de forma eficiente e organizada.
 
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/Impulse-LuzCriacao/template-web-app">
-    <img src="https://i.imgur.com/lPqWqzK.png" alt="Logo">
-  </a>
+### Tecnologias Utilizadas
 
-  <h3 align="center">NextJs 13 Boilerplate</h3>
+- Next.js
+- React.js
+- Material-UI
+- TypeScript
+- Styled-Components
 
-  <p align="center">
-    A Complete NextJs Boilerplate
-    <br />
-    <a href="https://github.com/Impulse-LuzCriacao/template-web-app/wiki"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/Impulse-LuzCriacao/template-web-app">View Demo</a>
-    ·
-    <a href="https://github.com/Impulse-LuzCriacao/template-web-app">Report Bug</a>
-    ·
-    <a href="https://github.com/Impulse-LuzCriacao/template-web-app">Request Feature</a>
-  </p>
-</p>
+### Funcionalidades Principais
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
+- Autenticação de Usuários
+- Mudança de Tema
+- Login
+- Rotas Privadas
+- Componentização do Material-UI
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-<!--
+### Como Usar
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+1. **Pré-requisitos**: Certifique-se de ter o Node.js instalado na sua máquina.
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+2. **Clone o repositório**: Faça um clone deste repositório para a sua máquina local:
 
-### Built With
-
-* []()
-* []()
-* []()
-
--->
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-
-* npm
-
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Clone the repo
-
-   ```sh
-   git clone https://github.com/Impulse-LuzCriacao/template-web-app.git
-   ```
-
-2. Install NPM packages
-
-   ```sh
-   npm install
-   ```
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-```json
-"scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint src --max-warnings=0",
-    "husky": "husky install",
-    "test": "jest",
-    "test:watch": "yarn test --watch",
-    "storybook": "start-storybook -s ./public -p 3010",
-    "build-storybook": "build-storybook -s ./public",
-    "generate": "yarn plop --plopfile ./generators/plopfile.js"
-  },
+```bash
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+cd nome-do-repositorio
 ```
 
-_For more examples, please refer to the [Documentation](https://github.com/Impulse-LuzCriacao/template-web-app/wiki/Scripts---package.json)_
+3. **Instale as dependências**: Use o gerenciador de pacotes npm ou yarn para instalar as dependências do projeto.
 
-<!-- ROADMAP -->
-## Roadmap
+```bash
+npm install
+# ou
+yarn
+```
 
-See the [open issues](https://github.com/Impulse-LuzCriacao/template-web-app/issues) for a list of proposed features (and known issues).
+4. **Configuração de Variáveis de Ambiente**: Alguns recursos do projeto podem exigir variáveis de ambiente. Verifique se todas as variáveis necessárias estão configuradas corretamente em um arquivo `.env` na raiz do projeto.
 
-<!-- CONTRIBUTING -->
-## Contributing
+5. **Executando o Projeto**: Use o comando abaixo para executar o projeto em modo de desenvolvimento:
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+```bash
+npm run dev
+# ou
+yarn dev
+```
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+O projeto estará disponível em `http://localhost:3000`.
 
-<!-- LICENSE -->
-## License
+### Estrutura do Projeto
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Descreva a estrutura geral do projeto, destacando os principais diretórios e suas finalidades.
 
-<!-- CONTACT -->
-### Autor
+```
+/
+|-- public/             # Arquivos estáticos (imagens, etc.)
+|-- src/                # Código-fonte do projeto
+|   |-- components/     # Componentes React reutilizáveis
+|   |-- pages/          # Páginas do Next.js
+|   |-- styles/         # Estilos globais e temas do Material-UI
+|   |-- utils/          # Utilitários e funções auxiliares
+|-- .env                # Arquivo de configuração de variáveis de ambiente
+|-- .gitignore          # Arquivos e pastas a serem ignorados pelo Git
+|-- package.json        # Dependências e scripts do projeto
+|-- tsconfig.json       # Configurações do TypeScript
+|-- README.md           # Documentação do projeto (este arquivo)
+```
 
----
+### Autenticação
 
-<a href="https://www.linkedin.com/in/tony-silva/">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/54373473?v=4" width="150px;" alt=""/>
- <br />
- <sub><b>Antônio Bernardino da Silva</b></sub></a> <a href="https://www.linkedin.com/in/tony-silva/" title="LinkedIn".</a>
+Descreva o processo de autenticação padronizado utilizado no projeto (por exemplo, JWT, OAuth, etc.).
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/tony-silva/
+### Contribuição
+
+Se você deseja contribuir com este projeto, siga as etapas abaixo:
+
+1. Faça um fork deste repositório.
+
+2. Crie um branch para sua feature/correção:
+
+```bash
+git checkout -b minha-feature
+```
+
+3. Faça as alterações necessárias e adicione-as ao commit:
+
+```bash
+git add .
+git commit -m "Minha feature incrível"
+```
+
+4. Faça o push para o seu branch:
+
+```bash
+git push origin minha-feature
+```
+
+5. Crie um pull request para o repositório original.
+
+6. Aguarde a revisão e a aprovação do seu pull request. Se necessário, faça ajustes de acordo com o feedback dos mantenedores do projeto.
+
+### Licença
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+### Contato
+
+Coloque informações de contato para você ou sua equipe, caso os usuários tenham perguntas ou queiram se comunicar sobre o projeto.
+
