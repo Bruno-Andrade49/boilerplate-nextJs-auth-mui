@@ -1,0 +1,74 @@
+{
+  "name": "boilerplate-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "husky": "husky install",
+    "test": "jest",
+    "test:watch": "yarn test --watch",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "generate": "yarn plop --plopfile ./generators/plopfile.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn lint --fix",
+      "yarn test --findRelatedTests --bail"
+    ]
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.3",
+    "@mui/material": "^5.14.3",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.0.0",
+    "graphql": "^16.7.1",
+    "graphql-request": "^6.1.0",
+    "handlebars": "^4.7.7",
+    "husky": "^8.0.3",
+    "jest-styled-components": "^7.1.1",
+    "js-cookie": "^3.0.5",
+    "lint-staged": "^13.2.3",
+    "next": "13.4.12",
+    "plop": "^3.1.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "^7.1.1",
+    "styled-components": "^6.0.5"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.1.1",
+    "@storybook/addon-interactions": "^7.1.1",
+    "@storybook/addon-links": "^7.1.1",
+    "@storybook/addon-mdx-gfm": "^7.1.1",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.1.1",
+    "@storybook/nextjs": "^7.1.1",
+    "@storybook/react": "^7.1.1",
+    "@storybook/testing-library": "^0.2.0",
+    "@types/jest": "^26.0.23",
+    "@types/js-cookie": "^3.0.3",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "20.4.4",
+    "@types/react": "18.2.15",
+    "babel-loader": "^8.2.2",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.12",
+    "eslint-plugin-storybook": "^0.6.13",
+    "jest": "^27.0.4",
+    "typescript": "5.1.6"
+  },
+  "main": "index.js",
+  "author": "Antonio Silva <antoniobsilvaprof@hotmail.com>",
+  "license": "MIT"
+}
