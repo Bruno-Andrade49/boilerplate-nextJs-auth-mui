@@ -26,8 +26,9 @@ proporcionando uma base sólida e pronta para começar a criar aplicações de f
 2. **Clone o repositório**: Faça um clone deste repositório para a sua máquina local:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-cd nome-do-repositorio
+git clone https://github.com/Bruno-Andrade49/boilerplate-nextJs-auth-mui
+cd boilerplate-nextJs-auth-mui
+
 ```
 
 3. **Instale as dependências**: Use o gerenciador de pacotes npm ou yarn para instalar as dependências do projeto.
@@ -58,6 +59,9 @@ Descreva a estrutura geral do projeto, destacando os principais diretórios e su
 /
 |-- public/             # Arquivos estáticos (imagens, etc.)
 |-- src/                # Código-fonte do projeto
+|   |-- context/        # Gerenciador de estados globais da aplicação
+    |-- templates/      # Usado para criar templates prontos para determinadas páginas
+    |-- theme/          # Temas da aplicação geridos pelo Material-UI
 |   |-- components/     # Componentes React reutilizáveis
 |   |-- pages/          # Páginas do Next.js
 |   |-- styles/         # Estilos globais e temas do Material-UI
@@ -68,10 +72,6 @@ Descreva a estrutura geral do projeto, destacando os principais diretórios e su
 |-- tsconfig.json       # Configurações do TypeScript
 |-- README.md           # Documentação do projeto (este arquivo)
 ```
-
-### Autenticação
-
-Descreva o processo de autenticação padronizado utilizado no projeto (por exemplo, JWT, OAuth, etc.).
 
 ### Contribuição
 
@@ -102,11 +102,15 @@ git push origin minha-feature
 
 6. Aguarde a revisão e a aprovação do seu pull request. Se necessário, faça ajustes de acordo com o feedback dos mantenedores do projeto.
 
-### Licença
-
-Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
 ### Contato
 
-Coloque informações de contato para você ou sua equipe, caso os usuários tenham perguntas ou queiram se comunicar sobre o projeto.
+Se você tiver alguma dúvida, sugestão ou apenas queira bater um papo sobre o projeto, sinta-se à vontade para entrar em contato comigo:
+
+- **LinkedIn**: [Bruno Andrade](https://www.linkedin.com/in/bruno-andrade-386b331b6/)
+- **GitHub**: [Bruno-Andrade49](https://github.com/Bruno-Andrade49/)
+
+![Bruno Andrade](https://avatars.githubusercontent.com/u/75262645?s=400&u=b12595be098d2f37ecc8d05bcd84cd0b65916eff&v=4)
+
+---
+
 
