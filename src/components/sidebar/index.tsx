@@ -16,6 +16,9 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { CustomThemeContext } from "context/themeContext";
 import { DrawerContext } from "context/drawerContext";
+import Image from "next/image";
+import Logo from "../../assets/logo.png";
+
 
 const Sidebar: React.FC = () => {
 
@@ -36,6 +39,8 @@ const Sidebar: React.FC = () => {
   return (
     <>
       <Drawer anchor="left" open={isDrawerOpen} onClose={() => setIsDrawerOpen(!isDrawerOpen)}>
+        <Image src={Logo} width={160} height={80} alt="logo" priority/>
+
         <Box p={"20px 0"} width={"250px"} textAlign={"center"} role="presentation">
           <Typography variant="h6" component={"div"}>
             Side Panel
